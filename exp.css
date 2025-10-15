@@ -268,7 +268,7 @@ nav a {
 
 .menu-toggle {
   
-  display: none;
+ display: none;
   font-size: 28px;
   color: white;
   cursor: pointer;
@@ -297,6 +297,7 @@ nav a {
     padding: 20px;
     border-radius: 10px;
     z-index: 999;
+
   }
 
   .nav-links.active {
@@ -306,6 +307,8 @@ nav a {
   nav ul {
     flex-direction: column;
     gap: 15px;
+    width: 100%;
+  overflow-x: hidden;
   }
 }
 .about-section {
@@ -410,6 +413,7 @@ nav a {
     line-height: 50px;
   }
 }
+
 
 
 
