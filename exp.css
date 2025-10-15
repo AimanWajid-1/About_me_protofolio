@@ -1,0 +1,410 @@
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: default;
+  user-select: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-first {
+  color: #00ffff; /* Bright neon cyan */
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+.logo-last {
+  color: #ffffff;
+  margin-left: 6px;
+  text-shadow: 0 0 4px #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+  background-color: #0D0D0D;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  color: white;
+}
+
+
+header {
+  background: #140b2d;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #00FFFF;
+  text-decoration: none;
+}
+
+
+.hero {
+  background: linear-gradient(to right, #2a0845, #6441a5);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/astronaut-in-fantasy-psychedelic-scenery-free-image.jpg?w=2210&quality=70);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0 0;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 111px;
+  border: none;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.search-bar input:focus{
+  outline: none;
+ box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.hero-image img {
+  max-width: 100%;
+}
+
+
+.wave {
+  height: 100px;
+  background: white;
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
+  margin-top: -30px;
+}
+
+
+.steps {
+  background:#0D0D0D;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.steps h2 {
+  margin-bottom: 40px;
+  font-size: 1.8em;
+  color: #E0E0E0;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+ 
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 150px;
+  padding: 20px;
+  color: #E0E0E0;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(156, 109, 252, 0.2);
+  transition: transform 0.3s ease;
+  background-color:rgba(255, 255, 255, 0.07);
+}
+.step p{
+  
+  color:#E0E0E0;
+  font-weight: 44px;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  color:#E0E0E0;
+  margin-bottom: 30px;
+}
+
+.browse {
+  color: #E0E0E0;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 300px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .step {
+    width: 80%;
+    height: 166px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2em;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8em;
+  }
+
+  .browse {
+    font-size: 1.1em;
+    margin: 12px;
+  }
+}
+
+.menu-toggle {
+  
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #140b2d;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: calc(100% - 40px);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.about-section {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/021/970/960/non_2x/background-image-with-a-mix-of-blue-and-purple-colors-resembling-a-galaxy-or-space-theme-generative-ai-free-photo.jpeg'); /* Replace with actual image link */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; 
+  padding: 60px 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  
+}
+
+.about-section h2 {
+  font-size: 2em;
+ 
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1em;
+  
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+.anchor_projects{
+  text-decoration: none;
+}
+
+
+.button_project{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 21px;
+}
+.project_1 {
+  align-items: center;
+  align-items: center;
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Codec cold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 54px;
+  justify-content: center;
+  letter-spacing: .4px;
+  line-height: 1;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.project_1:active {
+  outline: 0;
+}
+
+.project_1:hover {
+  outline: 0;
+}
+
+.project_1 span {
+  transition: all 200ms;
+}
+
+.project_1:hover span {
+  transform: scale(.9);
+  opacity: .75;
+}
+
+@media screen and (max-width: 991px) {
+  .project_1 {
+    font-size: 15px;
+    height: 50px;
+  }
+
+  .project_1 span {
+    line-height: 50px;
+  }
+}
+
+
